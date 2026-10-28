@@ -9,3 +9,4 @@ export function setLocalStorage(key, value){
 export function removeLocalStorage(key){
     localStorage.removeItem(key);
 }
+

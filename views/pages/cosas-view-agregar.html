@@ -12,7 +12,8 @@
   <aside class="top-notice">
     <div class="container top-notice-inner">
       <span>PANEL DE PUBLICACIÓN — AGREGA PIEZAS A NUESTRA SELECCIÓN</span>
-      <span>KOSAS STUDIO 2026</span>
+      <span id="info-usuario"></span>
+      <button id ="btn-salir" class="nav-brand-badge" >Cerrar Sesión</button>
     </div>
   </aside>
 
@@ -33,7 +34,6 @@
 
   <main class="main-content">
     <div class="container panel-wrapper">
-
       <div class="form-panel-wide b-card">
         
         <div class="card-header">
@@ -57,8 +57,6 @@
               Detalla con claridad los materiales y dimensiones exactas para facilitar la decisión de compra de los usuarios.
             </div>
           </div>
-
-          <form action="catalogo.html" method="GET">
             
             <div class="form-grid-2">
               <div class="form-group">
@@ -160,7 +158,7 @@
             </div>
 
             <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-top: var(--space-lg);">
-              <button type="submit" class="btn btn-primary" style="flex: 1; padding: 0.95rem;">
+              <button id="btn-agregar-kosa" type="button" class="btn btn-primary" style="flex: 1; padding: 0.95rem;">
                 Publicar Cosa en el Catálogo
               </button>
               <a href="./cosas-view-catalogo.html" class="btn" style="background-color: var(--color-surface-muted);">
@@ -215,6 +213,8 @@
       </div>
     </div>
   </footer>
-
+  <script type="module" src="../../controllers/CosasController.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
